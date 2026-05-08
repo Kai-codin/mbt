@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MBT Status</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #f3f4f6;
+      color: #111827;
+    }
+
+    /* Top bar */
+    .topbar {
+      background: linear-gradient(135deg, #6b9ec1, #4f87a8);
+      padding: 12px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: bold;
+      color: black;
+    }
+
+    .logo span {
+      font-weight: normal;
+      font-size: 14px;
+      margin-left: 4px;
+    }
+
+    .search {
+      display: flex;
+      gap: 8px;
+    }
+
+    .search input {
+      padding: 6px 10px;
+      border-radius: 6px;
+      border: none;
+      width: 200px;
+    }
+
+    .search button {
+      background: #9ec3dd;
+      border: none;
+      padding: 6px 12px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    /* Main content */
+    .wrapper {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 28px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    h1 {
+      margin-top: 0;
+      font-size: 28px;
+    }
+
+    h2 {
+      margin-top: 24px;
+      font-size: 20px;
+      color: #4f87a8;
+    }
+
+    p, li {
+      line-height: 1.6;
+      color: #374151;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .highlight {
+      color: #2563eb;
+      font-weight: bold;
+    }
+
+    .banner {
+      margin-top: 20px;
+      background: #7fa7c2;
+      color: white;
+      padding: 16px;
+      border-radius: 10px;
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .footer {
+      margin-top: 24px;
+      font-size: 14px;
+      color: #6b7280;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="card">
+      <h1>What’s Going On</h1>
+
+      <div class="banner">Service Temporarily Unavailable – Restoring from Backup</div>
+
+      <h2>Summary</h2>
+      <p>Earlier today, we identified that an unauthorized individual gained access via a user account. We are currently investigating and securing all systems.</p>
+
+      <h2>What Happened</h2>
+      <p>From what we’ve gathered so far, someone gained access through a user account. We are reviewing logs to determine exactly how this occurred.</p>
+
+      <h2>Current Actions</h2>
+      <ul>
+        <li>Restoring systems from a backup taken at <span class="highlight">4:30 PM today</span></li>
+        <li>Securing all access points</li>
+        <li>Adding additional monitoring</li>
+      </ul>
+
+      <h2>Data & Security</h2>
+      <ul>
+        <li><strong>No evidence of sensitive personal data exposure</strong></li>
+        <li>Possible visible data:
+          <ul>
+            <li>Email addresses</li>
+            <li>Names</li>
+          </ul>
+        </li>
+        <li><strong>Payment information is safe</strong>
+          <ul>
+            <li>Handled by Stripe</li>
+            <li>Not stored on MBT systems</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h2>What You Should Do</h2>
+      <ul>
+        <li>Optionally update your password</li>
+        <li>Avoid reusing passwords</li>
+      </ul>
+
+      <h2>Questions</h2>
+      <p>If you have questions, please reach out and we’ll respond where we can.</p>
+
+      <div class="footer">
+        We’ll keep you updated as we restore service.
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
